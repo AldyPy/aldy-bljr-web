@@ -1,0 +1,331 @@
+html {
+  font-family: Cabin;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  justify-items: center;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* border: black solid 10px; */
+}
+main {
+  padding-top: 150px;
+}
+
+ul {
+  list-style: none;
+  /* border: black solid; */
+}
+
+a:link {
+  text-decoration: none;
+  /* all: initial; */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button {
+  all: initial;
+}
+
+
+/* NAVBAR */
+a#navbar-news:hover {
+  color: red;
+}
+a#navbar-anime:hover {
+  color: pink;
+}
+a#navbar-music:hover {
+  color: yellow;
+}
+a#navbar-artists:hover {
+  color: #B244B2;
+}
+a#navbar-game:hover {
+  color: rgb(49, 189, 189);
+}
+a#navbar-about:hover {
+  color: darkorange;
+}
+
+nav {
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  background-color: #ffffffee;
+  z-index: 1030;
+
+  width: 100%;
+  
+}
+
+nav > div {
+  
+  padding-top: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  
+  width: 1368px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bandori-nav-logo {
+  width: 100%;
+}
+
+#navbar {
+  padding: 0;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+li .navbar-item {
+  letter-spacing: .1rem;
+  font-family: inherit;
+  font-size: 135%;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  padding: 10px 6px 10px 6px;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+h1 {
+  width: 140%;
+  justify-self: center;
+  /* justify-content: center; */
+}
+
+h1 img {
+  zoom: 60%;
+  width: 100%;
+  /* transform: scale(1.5); */
+  z-index: 1;
+  position: relative;
+}
+
+h2 {
+  letter-spacing: .175rem;
+  text-align: center;
+  align-items: center;
+  color: #282828;
+  font-size: 160%;
+}
+
+.scroll-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#scroll-button {
+  letter-spacing: .2rem;
+  text-align: center;
+  color: #e50150;
+  z-index: 2;
+  padding: 20px;
+  background-color: #faccdc99;
+  font: inherit;
+  position: relative;
+}
+
+#scroll-button:hover {
+  background-color: #faccdcdd;
+}
+
+h2::before {
+  content: "";
+  background-image: url('guitar-favicon.png');
+  background-size: 22px 22px;
+  display: inline-block;
+  width: 32px; 
+  height: 22px;
+  background-repeat: no-repeat;
+  transform: scale(1.25);
+}
+
+.news-list-container {
+  width: 1000px;
+}
+
+.news-list-container time {
+  color: grey;
+  padding-bottom: 15px;
+}
+
+.news-list-container li article a:link {
+  padding-top: 10px;
+  display: block;
+  color: black;
+  font-family: Cabin;
+  font-size: 1.3rem;
+}
+
+.news-list-container li article a:hover {
+  color: #e5004f;
+}
+
+#more-button-container {
+  
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#more-button {
+  font-family: Cabin;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: .1rem;
+  padding: 18px 120px 18px 120px;
+  text-align: center;
+  background-color: #e5004f;
+  border-radius: 4px;
+}
+
+.news-list-container a:visited {
+  color: black;
+}
+
+.news-list-container li {
+  padding: 25px 40px;
+  border-bottom: dotted #e5004f;
+}
+
+#news-list-section {
+  background-image: url('https://en.bang-dream.com/wordpress/wp-content/themes/en_bang-dream_v0/assets/images/common/page-bg-sp.png');
+  background-position-y: bottom;
+  background-size: 30%;
+  background-repeat: repeat-x;
+}
+
+
+
+/* SNS LIST */
+#sns-section {
+  background-image: url('https://en.bang-dream.com/wordpress/wp-content/themes/en_bang-dream_v0/assets/images/common/footer-banner-bg.png');
+}
+
+.snsgrid-container {
+  display: flex;
+  justify-content: center;
+}
+
+#sns-list {
+  width: 700px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);  
+  font-family: Cabin;
+  font-size: 135%;
+}
+
+#sns-list li {
+  display: flex;
+  margin: 5px;
+  height: 80px;
+}
+
+#sns-list li a {
+  display: block;
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+}
+
+#sns-list img {
+  display: inline-block;
+  width: 5%;
+  transform: scale(1.5);
+}
+
+.SNS-username {
+  padding-left: 20px;
+  width: 400px;
+  display: inline-block;
+  color: black;
+}
+
+.lang-info {
+  display: inline-block;
+  font: inherit;
+  color: grey;
+}
+
+#news-list {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#store-img {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#store-img img {
+  width: 40%;
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #000000aa;
+  background-image: url("https://en.bang-dream.com/wordpress/wp-content/uploads/20221003211903/BGD_OS_HPheader_TOP_PC-3.jpg");
+  background-position-y: center;
+  background-blend-mode: darken;
+  background-size: 100%;
+  text-align: center;
+  letter-spacing: .2rem;
+  color: white;
+  font-family: Cabin;
+  font-size: 100%;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+footer * {
+  padding-top: 5px;
+}
+
+footer a:link, 
+footer a:visited {
+  color: white;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #e5004f;
+}
+
+footer a img {
+  width: 35px;
+}
+
+#bandori-footer-logo {
+  width: 75%;
+}
+
+.en {
+  border-color: white;
+}

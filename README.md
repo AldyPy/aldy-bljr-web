@@ -1,2 +1,2 @@
 # aldy-bljr-web
-A compilation of my web projects.
+Studying web dev purely without using any AI. Hopefully I will be able to code without relying on LLMs. LLMs are powerful, but if I use them without being able to write a single line of Javascript then my website is gonna be trash.
