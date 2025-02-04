@@ -1,0 +1,160 @@
+
+/* General */
+html {
+  font-family: "Noto Serif JP", "Raleway", serif;
+  background: 
+    fixed linear-gradient(to bottom, rgba(0,0,0,30), 20%,rgba(0,0,0,0), 80%, rgba(0,0,0,30)),
+    fixed linear-gradient(to right, rgba(0,0,0,30), 20%,rgba(0,0,0,0), 80%, rgba(0,0,0,30)),
+    fixed no-repeat url('background.png');
+  background-size: cover;
+  background-blend-mode: darken;
+  color: white;
+}
+
+a {
+  color: unset;
+}
+
+body {
+  justify-items: center;
+}
+
+h1 {
+  font-family: "Dancing Script", serif;
+}
+
+h2 {
+  padding-left: 10px;
+  border-bottom: solid white 2px;
+}
+
+ol {
+  list-style: none;
+}
+
+
+/* Song art and audio */
+section.song-info {
+  background: rgba(0, 0, 0, 80%);
+  border: solid blueviolet 3px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+section.song-info .art-and-audio {
+  padding: 20px;
+  max-width: 50%;
+}
+
+img[src^="cover"],
+img[src^="cover"] + audio {
+  margin: 5px;
+  width: 100%;
+}
+
+/* Song description */
+section.song-info .desc {
+  max-width: 50%;
+  padding: 10px;
+}
+
+audio {
+  filter: drop-shadow(0 0 2px white);
+  display: block;
+}
+
+section.lyrics {
+  width: 90%;
+}
+
+
+/* Timestamps */
+nav ol {
+  padding: 0;
+  margin: 0;
+  column-count: 3;
+  column-width: 40%;
+  justify-items: left;
+}
+
+nav ol li a {
+  font-family: monospace;
+  margin-top: 5px;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0, 0, 120, 0.5);
+  box-shadow: -2px -2px 0 rgba(0, 255, 60, 0.7);
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 6px 4px 6px 4px;
+}
+
+a:link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover,a:active {
+  filter: drop-shadow(0 0 5px white);
+  color: black;
+  background-color: rgba(0, 255, 60, 0.7);
+  box-shadow: -2px -2px 0  rgba(0, 0, 120, 0.5);
+}
+
+
+img[src^="cover"]  {
+  filter: 
+  drop-shadow(5px 5px 0 rgba(0, 0, 255, 80%))
+    drop-shadow(-5px -5px 0 rgba(50, 200, 50, 80%));
+  border-radius: 10px;
+}
+
+/* Lyrics */
+section.lyrics {
+  font-size: 1.5em;
+  justify-items: center;
+  background-color: rgba(0, 0, 20, 0.8);
+  padding: 20px;
+  margin-top: 10px;
+  width: auto;
+
+  box-shadow: 
+    5px 0 3px black,
+    -5px 0 3px black;
+}
+
+section.lyrics ol {
+  padding-left: 0;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}
+
+section.lyrics ol li:hover {
+  text-shadow: 0 0 3px white;
+  cursor:default;
+}
+
+  
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  
+  section.song-info {
+    display: block;
+    justify-items: center;
+  }
+  section.song-info .desc,
+  section.song-info .art-and-audio {
+    max-width: 90%;
+  }
+
+  nav ol li {
+    font-size: 0.5em;
+  }
+
+}
+
